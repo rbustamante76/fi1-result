@@ -1,0 +1,8 @@
+node_modules/
+tmp/
+.vscode/*
+test/results.xml
+coverage/
+.scannerwork/
+\.DS_Store
+.idea

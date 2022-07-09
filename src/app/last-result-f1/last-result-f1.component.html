@@ -1,0 +1,5 @@
+<h3>Gran Premio de {{ raceName }}</h3>
+<div *ngFor='let result of results'>
+    <h5>{{ result.position }} {{ result.Driver.givenName }} {{ result.Driver.familyName }} {{ result.Constructor.name}} {{ result.Time.time }}</h5>
+
+</div>
