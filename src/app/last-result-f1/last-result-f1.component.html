@@ -1,5 +1,21 @@
-<h3>Gran Premio de {{ raceName }}</h3>
-<div *ngFor='let result of results'>
-    <h5>{{ result.position }} {{ result.Driver.givenName }} {{ result.Driver.familyName }} {{ result.Constructor.name}} {{ result.Time.time }}</h5>
 
+<ion-text>Carrera : {{ raceName }}</ion-text>
+<div >
+    <ion-grid>
+        <ion-row>
+            <ion-col>POS</ion-col>
+            <ion-col>Piloto</ion-col>
+            <ion-col>Escuderia</ion-col>
+            <ion-col>Tiempo</ion-col>
+        </ion-row>
+        <ion-row *ngFor='let result of results'>
+            <ion-col>{{ result.position }}</ion-col>
+            <ion-col>{{ result.Driver.givenName }} {{ result.Driver.familyName }}</ion-col>
+            <ion-col>{{ result.Constructor.name}}</ion-col>
+            <ion-col>{{ result.Time.time }}</ion-col>
+        </ion-row>
+    </ion-grid>
+    <!--<h5>{{ result.position }} {{ result.Driver.givenName }} {{ result.Driver.familyName }} {{ result.Constructor.name}} {{ result.Time.time }}</h5>
+    -->
 </div>
+

@@ -6,6 +6,7 @@ import { LastResultF1Component } from './last-result-f1/last-result-f1.component
 import { HttpClientModule } from '@angular/common/http'
 import { Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { createCustomElement } from '@angular/elements';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    IonicModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent, LastResultF1Component]
