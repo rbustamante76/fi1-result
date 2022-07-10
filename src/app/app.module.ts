@@ -27,7 +27,7 @@ export class AppModule {
         injector: this.injector
       }
     );
-    customElements.define('last_result-f1-widget', customElement);
+    customElements.define('last-result-f1-widget', customElement);
   }
 
   ngDoBootstrap() {}
