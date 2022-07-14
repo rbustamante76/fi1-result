@@ -5,7 +5,7 @@ import { LastResultF1Service } from './last-result-f1.service';
 @Component({
   selector: 'app-last-result-f1',
   templateUrl: './last-result-f1.component.html',
-  styleUrls: ['./last-result-f1.component.scss']
+  styleUrls: ['./last-result-f1.component.scss'],
 })
 export class LastResultF1Component implements OnInit {
   public results: Result[] = [];
@@ -22,7 +22,7 @@ export class LastResultF1Component implements OnInit {
         }
           return result;
         });
-      
+
       this.raceName = lastRace.raceName;
       console.log('results:', this.results);
       console.log('racename', this.raceName)

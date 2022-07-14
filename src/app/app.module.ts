@@ -6,7 +6,7 @@ import { LastResultF1Component } from './last-result-f1/last-result-f1.component
 import { HttpClientModule } from '@angular/common/http'
 import { Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicModule} from '@ionic/angular';
 
 @NgModule({
   declarations: [
@@ -19,17 +19,17 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
     IonicModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent, LastResultF1Component]
+  bootstrap: []
 })
-export class AppModule { 
+export class AppModule {
   constructor(private injector: Injector){
     const customElement = createCustomElement(
-      LastResultF1Component,
+      AppComponent,
       {
         injector: this.injector
       }
     );
-    customElements.define('last-result-f1-widget', customElement);
+    customElements.define('app-race-f1-last-result', customElement);
   }
 
   ngDoBootstrap() {}
